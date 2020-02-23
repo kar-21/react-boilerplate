@@ -1,13 +1,16 @@
 import React from "react";
 import "./App.css";
+import Core from "./core/Core";
+import Shared from "./shared/Shared";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    return <h1>Hello World</h1>;
+    return (
+      <>
+        <Core />
+        <Shared />
+      </>
+    );
   }
 }
 
